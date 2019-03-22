@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:gravity="center_horizontal">
+
+    <Button
+        android:id="@+id/tv_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3D画廊"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/tv_showother"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="相互连接显示"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"/>
+
+
+    <Button
+        android:id="@+id/tv_indicater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="水滴指示器"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/tv_rebound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置是否可滚动viewpager"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

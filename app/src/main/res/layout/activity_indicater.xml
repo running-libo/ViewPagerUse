@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".gallery.GalleryActivity">
+
+    <com.example.apple.viewpageruse.indicater.DropViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"/>
+
+    <com.example.apple.viewpageruse.indicater.DropIndicator
+        android:id="@+id/circleIndicator"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:circle_color="@color/colorAccent"
+        app:color1="@color/yellow"
+        app:color2="@color/purple"
+        app:color3="@color/blue"
+        app:duration="800"
+        app:radius="4dp">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </com.example.apple.viewpageruse.indicater.DropIndicator>
+
+</RelativeLayout>
