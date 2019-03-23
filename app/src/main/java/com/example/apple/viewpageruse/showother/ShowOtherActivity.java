@@ -4,9 +4,11 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
 import com.example.apple.viewpageruse.MyFragmentPagerAdapter;
 import com.example.apple.viewpageruse.PagerFragment;
 import com.example.apple.viewpageruse.R;
+
 import java.util.ArrayList;
 
 public class ShowOtherActivity extends AppCompatActivity {
@@ -21,7 +23,7 @@ public class ShowOtherActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_other);
 
-        for (int i=0;i<pages.length;i++) {
+        for (int i = 0; i < pages.length; i++) {
             Bundle bundle = new Bundle();
             bundle.putInt("colorResId", colorResId[i]);
             pagerFragment = new PagerFragment();

@@ -8,6 +8,7 @@ import android.os.Bundle;
 import com.example.apple.viewpageruse.MyFragmentPagerAdapter;
 import com.example.apple.viewpageruse.PagerFragment;
 import com.example.apple.viewpageruse.R;
+
 import java.util.ArrayList;
 
 public class GalleryActivity extends AppCompatActivity {
@@ -22,7 +23,7 @@ public class GalleryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gallery);
 
-        for (int i=0;i<pages.length;i++) {
+        for (int i = 0; i < pages.length; i++) {
             Bundle bundle = new Bundle();
             bundle.putInt("colorResId", colorResId[i]);
             pagerFragment = new PagerFragment();

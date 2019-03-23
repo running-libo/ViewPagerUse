@@ -13,6 +13,7 @@ import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
+
 import com.example.apple.viewpageruse.R;
 
 public class DropIndicator extends ViewGroup {
@@ -120,25 +121,6 @@ public class DropIndicator extends ViewGroup {
         super.onSizeChanged(w, h, oldw, oldh);
     }
 
-//    @Override
-//    public boolean onTouchEvent(MotionEvent event) {
-//        float x = event.getX();
-//        if (x > div + 2 * radius && x < (div + 2 * radius) * tabNum) {
-//            if (animator != null)
-//                animator.cancel();
-//            int toPos = (int) (x / (div + 2 * radius));
-//            if (toPos != currentPos && toPos <= tabNum)
-//                startAniTo(currentPos, toPos);
-//        } else if (x > div && x < div + 2 * radius) {
-//            if (animator != null)
-//                animator.cancel();
-//            if (currentPos != 0)
-//                startAniTo(currentPos, 0);
-//        }
-//        return super.onTouchEvent(event);
-//    }
-
-
     ValueAnimator animator;
 
     private boolean startAniTo(int currentPos, int toPos) {
@@ -183,7 +165,7 @@ public class DropIndicator extends ViewGroup {
                     goo();
                     animating = false;
                     setTouchAble(!animating);
-                    mCurrentTime=1;
+                    mCurrentTime = 1;
                     invalidate();
                 }
 
@@ -547,6 +529,7 @@ public class DropIndicator extends ViewGroup {
         final float scale = mContext.getResources().getDisplayMetrics().density;
         return (int) (dpValue * scale + 0.5f);
     }
+
     float[][] f;
     float[] result;
     int[] colors = new int[4];
